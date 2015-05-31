@@ -1,0 +1,46 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+
+
+<body>
+
+<div metal:fill-slot="main">
+
+    <div tal:define="id here/id">
+        <div class="tituloSecao" tal:content="here/Title" />
+        <div class="imgtituloSecao">Título da Seção</div>
+        <div class="textoSecao" tal:content="here/Description" />
+    </div>
+
+    <div class="caixas"
+         tal:define="path python:'/'.join(context.getPhysicalPath());
+                     caixas python:context.portal_catalog.searchResults(Type='Programa', review_state='published', sort_on='sortable_title', path=path)">
+
+        <div class="caixa"
+             tal:repeat="caixa caixas">
+
+            <div class="textoCaixa">
+                <a tal:attributes="href caixa/getURL"><span class="tituloCaixa" tal:content="caixa/Title">Título</span></a>
+                <a tal:attributes="href caixa/getURL"><img tal:attributes="src python:caixa.getURL()+'/thumb'" /></a>
+                <p tal:content="caixa/getDescricao_sumaria" />
+            </div>
+            <a tal:attributes="href caixa/getURL"><div class="botaoCaixas">Botão saiba mais"</div></a>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+
+</body>
+</html>

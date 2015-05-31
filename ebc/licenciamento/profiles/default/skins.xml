@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<object name="portal_skins" allow_any="False" cookie_persistence="False"
+   default_skin="EBC Licenciamento">
+
+ <object name="ebc_licenciamento_images"
+    meta_type="Filesystem Directory View"
+    directory="ebc.licenciamento:skins/ebc_licenciamento_images"/>
+ <object name="ebc_licenciamento_templates"
+    meta_type="Filesystem Directory View"
+    directory="ebc.licenciamento:skins/ebc_licenciamento_templates"/>
+ <object name="ebc_licenciamento_styles"
+    meta_type="Filesystem Directory View"
+    directory="ebc.licenciamento:skins/ebc_licenciamento_styles"/>
+
+
+ <skin-path name="EBC Licenciamento" based-on="Plone Default">
+  <layer name="ebc_licenciamento_images"
+     insert-after="custom"/>
+  <layer name="ebc_licenciamento_templates"
+     insert-after="ebc_licenciamento_images"/>
+  <layer name="ebc_licenciamento_styles"
+     insert-after="ebc_licenciamento_templates"/>
+ </skin-path>
+
+</object>

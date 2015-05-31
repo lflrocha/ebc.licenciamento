@@ -1,0 +1,1146 @@
+/* <dtml-with base_properties> (do not remove this :) */
+/* <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either :) */
+
+html{
+   background: url('fundo-padrao.jpg');
+}
+
+#visual-portal-wrapper{
+   width: 100% !important;
+}
+
+#portal-top{
+   width: 100%;
+}
+
+#portal-header {
+   width: 900px;
+   margin: 0 auto;
+}
+
+#portal-column-content{
+   width: 900px;
+   margin: 0 auto;
+}
+
+#portal-columns{
+   width: 900px !important;
+   margin: 0 auto;
+}
+
+body{
+   background: url('fundo.png') no-repeat left top;
+}
+
+
+#ebc-header, #ebc-header * {
+    font-family: sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 1;
+}
+
+#ebc-header .outter {
+    background: url("bgTopo.png") repeat scroll 0 0 transparent;
+    height: 31px;
+}
+
+#ebc-header .inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 990px;
+}
+
+#ebc-header .inner .left {
+    float: left;
+}
+
+#ebc-header ul.sitesPrincipais li.first {
+    border-left: medium none;
+}
+
+#ebc-header .inner .right {
+    float: right;
+}
+
+#ebc-header ul.a11y {
+    display: none;
+}
+#ebc-header .a11y {
+    display: block !important;
+}
+
+#portal-searchbox {
+    background-color: transparent;
+    clear: right;
+    float: right;
+    margin: 5.5em 0 0;
+    padding: 0 2em 0 0;
+    text-align: right;
+    text-transform: none;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+input{
+   border-width: 0;
+}
+
+input.searchButton {
+    background: url("busca-icon.png") no-repeat scroll;
+    cursor: pointer;
+    margin-bottom: 1px !important;
+    padding: 1px 1px 1px 19px;
+    text-transform: none;
+    border: 0px solid #8CACBB;
+    min-height: 20px;
+    width: 5.7em;
+}
+
+#searchGadget {
+    border: 1px solid #76797C;
+    padding: 1px 5px;
+}
+
+.livesearchContainer {
+    border: 1px solid #76797C;
+    color: #393637;
+}
+
+#livesearchLegend {
+    border-color: #393637 #393637 -moz-use-text-color;
+}
+
+.LSRow a {
+    background-color: transparent;
+    color: #76797C;
+}
+
+.searchSection{
+   display: none;
+}
+
+
+input.searchPage {
+    padding: 0 10px;
+}
+
+.searchResults{
+   background-color: #fff;
+   padding: 15px;
+}
+
+.searchResults .state-published{
+   color: #393637 !important;
+   font-weight: bold;
+}
+
+
+
+#livesearchLegend{
+   display: none;
+}
+
+
+
+#visual-portal-wrapper {
+   margin: 0 auto;
+   width: 900px;
+   min-height: 700px;
+}
+
+.documentContent {
+    background: none repeat scroll 0 0 transparent;
+    font-size: 110%;
+    padding: 1em 1em 2em !important;
+    width: 850px;
+    margin: 0 auto;
+}
+
+#portal-globalnav {
+    background: url('fundo-menu.png') no-repeat right;
+    height: 30px;
+    line-height: normal;
+    list-style: none outside none;
+    margin: 0;
+    padding: 15px 0 6px 290px;
+    white-space: nowrap;
+}
+
+
+#portal-globalnav li {
+    display: inline;
+}
+
+#portal-globalnav li a {
+    background-color: transparent;
+    color: #fff;
+    border-width: 0px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    height: auto;
+    padding: 0 0.8em;
+    text-decoration: none;
+    text-transform: none;
+}
+
+
+
+#portal-globalnav li.selected a {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: transparent;
+    border-color: #8CACBB #8CACBB #DEE7EC;
+    border-image: none;
+    border-style: solid;
+    border-width: 0px;
+    
+}
+
+
+#portaltab-documentario a:hover{
+    background-color: transparent !important;
+    color: #fc6348 !important;
+}
+
+.section-documentario #portal-globalnav li.selected a {
+   color: #fc6348;
+}
+
+#portaltab-animacao a:hover{
+    background-color: transparent !important;
+    color: #f74949 !important;
+}
+
+.section-animacao #portal-globalnav li.selected a {
+   color: #f74949;
+}
+
+#portaltab-ficcao a:hover{
+    background-color: transparent !important;
+    color: #A6A7F7 !important;
+}
+
+.section-ficcao #portal-globalnav li.selected a {
+   color: #A8B1FE;
+}
+
+#portaltab-jornalistico a:hover{
+    background-color: transparent !important;
+    color: #f39161 !important;
+}
+
+.section-jornalistico #portal-globalnav li.selected a {
+   color: #f39161;
+}
+
+#portaltab-responsabilidade_cultural a:hover{
+    background-color: transparent !important;
+    color: #29BC75 !important;
+}
+
+.section-responsabilidade_cultural #portal-globalnav li.selected a {
+   color: #00BC89;
+}
+
+#portaltab-acervo a:hover{
+    background-color: transparent !important;
+    color: #7db2db !important;
+}
+
+.section-acervo #portal-globalnav li.selected a {
+   color: #7db2db;
+}
+
+
+
+
+/* CAIXAS */
+
+.caixas{
+   float: left;
+   width: 900px;
+   margin: 20px;
+}
+
+
+.caixa{
+   float: left;
+   margin-right: 30px;
+   margin-bottom: 30px;
+   width: 235px;
+   height: 200px;
+   padding: 10px;
+   background-color: #fff;
+
+
+/*   vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+*/
+}
+
+/*
+.caixa::before {
+  content: '';
+  position: absolute;
+  border: #fff solid 4px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: top, right, bottom, left;
+  transition-property: top, right, bottom, left;
+}
+
+.caixa:hover::before, .caixa:focus::before, .caixa:active::before {
+  
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
+}
+*/
+
+.caixa a{
+   text-decoration: none;
+}
+
+.caixa img{
+   padding: 10px 12px;
+}
+
+img.logoebc{
+   margin: -10px;
+   padding: 0 10px;
+}
+
+.textoCaixa{
+  height: 160px;
+  width: 220px;
+  padding: 0 10px;
+}
+
+.textoCaixaPrincipal {
+    height: 160px;
+    padding: 0 10px;
+    width: 220px;
+}
+
+.textoCaixaPrincipal p{
+   font-family: 'Titillium Web', sans-serif;
+   font-size: 14px;
+   color: #000;
+   line-height: 14px;
+   margin: 6px 0 0;
+   padding: 15px 5px;
+}
+
+.imgPrograma{
+   float: left;
+    color: #fff;
+    width: 880px;
+    /* padding: 30px 50px; */
+    font-family: Verdana;
+    font-size: 13px;
+    margin-top: -2px;
+}
+
+.caixaDescricaoPrograma{
+   background-color: #FFFFFF;
+    float: left;
+    min-height: 100px;
+    padding: 30px;
+    width: 820px;
+}
+
+
+
+.caixasTemporada{
+   float: left;
+   width: 900px;
+   margin: 20px;
+}
+
+.caixaTemporada{
+   float: left;
+   margin-right: 30px;
+   width: 820px;
+   height: 200px;
+   padding: 10px;
+   background-color: #fff;
+   margin: 0 0 20px;
+}
+
+.caixaTemporada a{
+   text-decoration: none;
+}
+
+.caixaTemporada img{
+   padding: 10px 12px;
+}
+
+.tituloCaixaTemporada{
+   font-family: 'Titillium Web', sans-serif;
+   font-size: 18px;
+   font-weight: bold;
+   line-height: 20px; 
+}
+
+.textoCaixaTemporada{
+  height: 160px;
+  width: 600px;
+  padding: 0 10px;
+}
+
+#carousel {
+    background: none repeat scroll 0 0;
+    clear: both;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    width: 850px;
+  }
+
+  #carousel img {
+    cursor: pointer;
+    display: hidden;
+  }
+
+
+#carousel1{
+   float:left;
+   width:750px;
+   height:400px;
+   background:transparent;
+   overflow:hidden;
+
+}
+
+#programasImageflow{
+   width: 880px;
+   margin: 0 auto;
+}
+
+#left-but{
+   float: left;
+   margin: 150px 2px 0;
+   width: 27px;
+   height: 27px;
+   background-image: url("but-left.png");
+   background-color: transparent;
+   text-indent: -999px;
+   cursor: pointer;
+}
+
+#right-but{
+   float: left;
+   margin: 150px 2px 0;
+   width: 27px;
+   height: 27px;
+   background-image: url("but-right.png");
+   background-color: transparent;
+   text-indent: -999px;
+   cursor: pointer;
+}
+
+.textoCaixa p{
+   font-family: 'Titillium Web', sans-serif;
+   font-size: 12px;
+   color: #000;
+   line-height: 14px;
+   margin: 5px 0 0 0;
+}
+
+.botaoCaixas{
+   float: right;
+   height: 24px;
+   margin: 26px -10px 0 0;
+   padding: 0;
+   position: relative;
+   text-indent: -9999px;
+   width: 28px;
+}
+
+.botaoCaixasPrincipal{
+   float: right;
+   height: 24px;
+   margin: 16px -22px 0 0;
+   padding: 0;
+   position: relative;
+   text-indent: -9999px;
+   width: 28px;
+}
+
+.tituloMarcas{
+   font-family: 'Titillium Web', sans-serif;
+   font-size: 16px;
+   font-weight: bold;
+   text-transform: uppercase;
+   line-height: 15px; 
+   color:#F17C00;
+}
+
+.tituloResponsabilidade{
+   font-family: 'Titillium Web', sans-serif;
+   font-size: 16px;
+   font-weight: bold;
+   text-transform: uppercase;
+   line-height: 15px; 
+   color:#368C50;
+}
+
+.tituloAcervo{
+   font-family: 'Titillium Web', sans-serif;
+   font-size: 16px;
+   font-weight: bold;
+   text-transform: uppercase;
+   line-height: 15px; 
+   color:#00406F;
+}
+
+.tituloSecao{
+    float: left;
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 15px;
+    padding: 7px 10px 8px;
+}
+
+.imgtituloSecao{
+    float: left;
+    height: 30px;
+    text-indent: -9999px;
+    width: 77px;
+}
+
+.textoSecao{
+    float: left;
+    background-color: #A82025;
+    color: #fff;
+    width: 780px;
+    padding: 30px 48px;
+    font-family: Verdana;
+    font-size: 13px;
+    margin-top: -2px;
+}
+
+.bannerDestaque{
+    background-color: #000;
+    float: left;
+    color: #fff;
+    width: 780px;
+    font-family: Verdana;
+    font-size: 13px;
+    margin-top: -2px;
+}
+
+.tituloSecao{
+   background-color: #000;
+}
+
+.imgtituloSecao{
+   background-image: url("fundo-titulo-principal.png");
+}
+
+.section-documentario .textoSecao{
+    background-color: #EB0813;
+}
+
+.section-documentario .tituloSecao{
+   background-color: #EB0813;
+}
+
+.section-documentario .imgtituloSecao{
+   background-image: url("fundo-titulo-informacao.png");
+}
+
+.section-documentario .tituloCaixa{
+   color: #EB0813;
+}
+
+.section-documentario .botaoCaixas{
+background-image: url("botaoInformacao.png");
+}
+
+
+
+
+.section-animacao .textoSecao{
+    background-color: #A82025;
+}
+
+.section-animacao .tituloSecao{
+   background-color: #A82025;
+}
+
+.section-animacao .imgtituloSecao{
+   background-image: url("fundo-titulo-arte.png");
+}
+
+.section-animacao .tituloCaixa{
+   color: #A82025;
+}
+
+.section-animacao .tituloCaixaPrograma{
+   color: #A82025;
+}
+
+.section-animacao .imgPrograma{
+   background-color: #A82025;
+}
+
+
+
+.section-animacao .botaoCaixas{
+background-image: url("botaoArte.png");
+}
+
+
+
+
+.section-ficcao .textoSecao{
+    background-color: #57669D;
+}
+
+.section-ficcao .tituloSecao{
+   background-color: #57669D;
+}
+
+.section-ficcao .imgtituloSecao{
+   background-image: url("fundo-titulo-conhecimento.png");
+}
+
+.section-ficcao .tituloCaixa{
+   color: #57669D;
+}
+
+.section-ficcao .botaoCaixas{
+background-image: url("botaoConhecimento.png");
+}
+
+
+
+.section-diversos .textoSecao{
+    background-color: #EE5924;
+}
+
+.section-diversos .tituloSecao{
+   background-color: #EE5924;
+}
+
+.section-diversos .imgtituloSecao{
+   background-image: url("fundo-titulo-infantil.png");
+}
+
+.section-diversos .tituloCaixa{
+   color: #EE5924;
+}
+
+.section-diversos .botaoCaixas{
+background-image: url("botaoInfantil.png");
+}
+
+
+
+
+.section-responsabilidade_cultural .textoSecao{
+    background-color: #368C50;
+}
+
+.section-responsabilidade_cultural .tituloSecao{
+   background-color: #368C50;
+}
+
+.section-responsabilidade_cultural .imgtituloSecao{
+   background-image: url("fundo-titulo-responsabilidade.png");
+}
+
+.section-responsabilidade_cultural .tituloCaixa{
+   color: #368C50;
+}
+
+.section-responsabilidade_cultural .botaoCaixas{
+background-image: url("botaoResponsabilidade.png");
+}
+
+
+
+.section-acervo .textoSecao{
+    background-color: #003E71;
+}
+
+.section-acervo .tituloSecao{
+   background-color: #003E71;
+}
+
+.section-acervo .imgtituloSecao{
+   background-image: url("fundo-titulo-acervo.png");
+}
+
+.section-acervo .tituloCaixa{
+   color: #003E71;
+}
+
+.section-acervo .botaoCaixas{
+background-image: url("botaoAcervo.png");
+}
+
+.botaoFormulario{
+   background-image: url("botaoFormulario.jpg");
+    float: right;
+    height: 24px;
+    margin: 20px -48px -30px;
+    text-indent: -999px;
+    width: 193px;
+}
+
+.botaoEstouInteressado{
+   float: right;
+   height: 24px;
+   margin: 15px 693px -10px;
+   text-indent: -99999px;
+   width: 137px;
+}
+
+.section-animacao .botaoEstouInteressado{
+   background-image: url("estou-interessado-informacao.jpg");
+   
+}
+
+.section-animacao .imgPrograma{
+    background-color: #EB0812;
+}
+
+.section-documentario .botaoEstouInteressado{
+   background-image: url("estou-interessado-arte.jpg");
+}
+
+.section-documentario .imgPrograma{
+    background-color: #A82025;
+}
+
+.section-diversos .botaoEstouInteressado{
+   background-image: url("estou-interessado-conhecimento.jpg");
+}
+
+.section-diversos .imgPrograma{
+    background-color: #57669D;
+}
+
+
+
+fieldset {
+    background-color: #FFFFFF;
+    border: 0 solid #8CACBB;
+    line-height: 1.5em;
+    margin: 1em 0;
+    padding: 20px;
+    width: auto;
+}
+
+.tituloCaixa{
+   font-family: 'Titillium Web', sans-serif;
+   font-size: 16px;
+   font-weight: bold;
+   text-transform: uppercase;
+   line-height: 15px; 
+}
+
+#conteudoeResponsabilidade{
+   background-color: #FFFFFF;
+   float: left;
+   margin: -40px 10px 20px;
+   min-height: 400px;
+   padding: 20px 50px 0 20px;
+   width: 790px;
+}
+
+#conteudoAcervo{
+   background-color: #FFFFFF;
+   float: left;
+   margin: 0 10px 20px 10px;
+   min-height: 400px;
+   padding: 20px 50px 0 20px;
+   width: 790px;
+}
+
+#conteudoeResponsabilidade img{
+   float: left;
+   width: 350px;
+   height: 250px;
+}
+
+#textoResponsabilidadeUm{
+   float: left;
+   padding: 0 30px;
+}
+
+#textoResponsabilidadeDois{
+   float: left;
+   margin-top: 15px;
+   padding: 0 30px;
+   width: 380px;
+}
+
+#degustacaoAcervo{
+   width: 890px;
+   padding-top: 140px;
+}
+
+
+.template-search .documentContent {
+   background-color: #ffffff;
+}
+
+.template-contact-info  .documentContent {
+   background-color: #ffffff;
+}
+
+.template-contact-info  legend {
+   display: none;
+}
+
+.template-contact-info  legend {
+   display: none;
+}
+
+.template-contact-info .context {
+    background: url("contato-botao.png") no-repeat scroll 9px 1px #EDEDED;
+    padding: 0 7px 0 25px;
+}
+
+
+
+#portal-footer {
+    background-color: transparent;
+    border-bottom: 0px;
+    border-top: 0px;
+    float: none;
+    margin: 2em 0 1em;
+    padding: 0.5em 0 1em;
+
+}
+
+#ebc-footer {
+    font-family: sans-serif;
+    margin-top: 0;
+}
+
+#ebc-footer .outer {
+    background: none repeat scroll 0 0 #E0E0E0;
+    height: 250px;
+    margin: 0 auto;
+}
+
+#ebc-footer .inner {
+    background: -moz-linear-gradient(center bottom , #0A0A0A 0%, #323232 100%) repeat scroll 0 0 #161616;
+    border-top: 1px solid #000000;
+    height: 44px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15%;
+}
+
+#ebc-footer .inner ul.linksGerais {
+    height: 44px;
+    margin: 0 auto;
+    padding: 0;
+    width: 720px;
+}
+
+#ebc-footer .inner ul.linksGerais li:first-child {
+    background-image: none;
+}
+
+#ebc-footer .inner ul.linksGerais li {
+    background-image: url("../images/ebc_default/footerMenuBorder.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    float: left;
+    font-size: 12px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 143px;
+}
+
+#ebc-footer .inner ul.linksGerais li a {
+    color: #919191;
+    display: block;
+    height: 14px;
+    margin-left: 1px;
+    padding: 15px 0 14px;
+    text-decoration: none;
+}
+
+#ebc-footer .inner .logo {
+    float: left;
+    margin: 45px;
+}
+
+#ebc-footer .inner .institucional {
+    color: #555555;
+    font-size: 11px;
+    line-height: 1.4em;
+    padding: 41px 45px 41px 12px;
+    text-shadow: 1px 0 #B6B6B6;
+    text-align: left;
+}
+
+#ebc-footer .inner .institucional.left {
+    float: left;
+    width: 250px;
+}
+
+#ebc-footer .inner .institucional.right {
+    float: right;
+    width: 300px;
+}
+
+#ebc-footer .inner .institucional a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+/* animacao */
+
+#portaltab-animacao a:hover{
+    background-color: transparent !important;
+    color: #EB0813 !important;
+}
+
+.section-animacao #portal-globalnav li.selected a {
+   color: #EB0813;
+}
+
+.section-animacao .textoSecao,
+.section-animacao .tituloSecao,
+.section-animacao .imgPrograma {
+   background-color: #EB0813;
+}
+
+.section-animacao .tituloCaixa,
+.section-animacao .tituloCaixaPrograma{
+  color: #EB0813;
+}
+
+.section-animacao .imgtituloSecao{
+  background-image: url("fundo-titulo-informacao.png");
+}
+
+.section-animacao .botaoCaixas{
+  background-image: url("botaoInformacao.png");
+}
+
+.section-animacao .botaoEstouInteressado{
+   background-image: url("estou-interessado-informacao.jpg");
+}
+
+
+/* documentario */
+
+
+#portaltab-documentario a:hover{
+    background-color: transparent !important;
+    color: #A6A7F7 !important;
+}
+
+.section-documentario #portal-globalnav li.selected a {
+   color: #A8B1FE;
+}
+
+.section-documentario .textoSecao,
+.section-documentario .tituloSecao,
+.section-documentario .imgPrograma {
+  background-color: #57669D;
+}
+
+.section-documentario .tituloCaixa,
+.section-documentario .tituloCaixaPrograma{
+  color: #57669D;
+}
+
+.section-documentario .imgtituloSecao{
+  background-image: url("fundo-titulo-conhecimento.png");
+}
+
+.section-documentario .botaoCaixas{
+  background-image: url("botaoConhecimento.png");
+}
+
+.section-documentario .botaoEstouInteressado{
+   background-image: url("estou-interessado-conhecimento.jpg");
+}
+
+
+
+/* Diversos */
+
+#portaltab-diversos a:hover{
+    background-color: transparent !important;
+    color: #f39161 !important;
+}
+
+.section-diversos #portal-globalnav li.selected a {
+   color: #f39161;
+}
+
+.section-diversos .textoSecao,
+.section-diversos .tituloSecao,
+.section-diversos .imgPrograma{
+    background-color: #EE5924;
+}
+
+.section-diversos .tituloCaixa,
+.section-diversos .tituloCaixaPrograma {
+   color: #EE5924;
+}
+
+.section-diversos .imgtituloSecao{
+  background-image: url("fundo-titulo-infantil.png");
+}
+
+.section-diversos .botaoCaixas{
+  background-image: url("botaoInfantil.png");
+}
+
+.section-diversos .botaoEstouInteressado{
+   background-image: url("estou-interessado-infantil.jpg");
+}
+
+
+/* Sobre */
+
+#portaltab-sobre a:hover{
+    background-color: transparent !important;
+    color: #29BC75 !important;
+}
+
+.section-sobre #portal-globalnav li.selected a {
+   color: #00BC89;
+}
+
+.section-sobre .textoSecao,
+.section-sobre .tituloSecao,
+.section-sobre .imgPrograma{
+    background-color: #368C50;
+}
+
+.section-sobre .tituloCaixa,
+.section-sobre .tituloCaixaPrograma{
+   color: #368C50;
+}
+
+.section-sobre .imgtituloSecao{
+   background-image: url("fundo-titulo-responsabilidade.png");
+}
+
+.section-sobre .botaoCaixas{
+background-image: url("botaoResponsabilidade.png");
+}
+
+/* Acervo */
+
+#portaltab-acervo a:hover{
+    background-color: transparent !important;
+    color: #7db2db !important;
+}
+
+.section-acervo #portal-globalnav li.selected a {
+   color: #7db2db;
+}
+
+.section-acervo .textoSecao,
+.section-acervo .tituloSecao,
+.section-acervo .imgPrograma {
+    background-color: #003E71;
+}
+
+.section-acervo .tituloCaixa,
+.section-acervo .tituloCaixaPrograma{
+   color: #003E71;
+}
+
+.section-acervo .imgtituloSecao{
+  background-image: url("fundo-titulo-acervo.png");
+}
+
+.section-acervo .botaoCaixas{
+  background-image: url("botaoAcervo.png");
+}
+
+
+
+
+/* xxx */
+
+#portaltab-xxx a:hover{
+    background-color: transparent !important;
+    color: #A82025 !important;
+}
+
+.section-xxx #portal-globalnav li.selected a {
+   color: #A82025;
+}
+
+.section-xxx .textoSecao,
+.section-xxx .tituloSecao,
+.section-xxx .imgPrograma {
+   background-color: #A82025;
+}
+
+.section-xxx .tituloCaixa,
+.section-xxx .tituloCaixaPrograma {
+  color: #A82025;
+}
+
+.section-xxx .imgtituloSecao{
+  background-image: url("fundo-titulo-arte.png");
+}
+
+.section-xxx .botaoCaixas{
+  background-image: url("botaoArte.png");
+}
+
+.section-xxx .botaoEstouInteressado{
+   background-image: url("estou-interessado-arte.jpg");   
+}
+
+
+.video {
+  width: 320px;
+  height: 240px;
+  background: black;
+  float: right;
+}
+
+.fichaTecnica {
+  width: 450px;
+  min-height: 260px;
+  float: left;
+}
+
+.produtoras {
+  float: left;
+
+}
+
+/* </dtml-with> */

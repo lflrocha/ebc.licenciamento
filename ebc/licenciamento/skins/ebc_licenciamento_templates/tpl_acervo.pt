@@ -1,0 +1,83 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+
+
+<body>
+
+<div metal:fill-slot="main">
+
+    <div tal:define="id here/id">
+        <div class="tituloSecao" tal:content="here/Title" />
+        <div class="imgtituloSecao">Título da Seção</div>
+        <div class="textoSecao"></div>
+         <div id="textoAcervo">
+<!--         <a tal:attributes="href string:${here/absolute_url}/contact-info"><div class="botaoFormulario">Botão Formulário</div></a>  -->
+        </div>
+    </div>
+
+    <div id="conteudoAcervo">A EBC administra o vasto acervo audiovisual, sonoro e fotográfico da comunicação pública do Brasil referente às rádios e televisões públicas federais. O acervo conta com mais de 1 milhão de registros fotográficos e 300 mil horas de conteúdos radiofônicos e audiovisuais exibidos em veículos como Agência Brasil, Radioagência Nacional, TVE do Rio de Janeiro, TVE do Maranhão, TV Nacional de Brasília, Rádio Nacional do Rio de Janeiro, Rádio Nacional AM de Brasília, Rádio Nacional FM de Brasília, Rádio Nacional do Amazonas, Rádio do Alto Solimões, Rádio MEC AM e Rádio MEC FM.
+       <br><br><br>
+       O conteúdo do acervo da EBC se destaca com diversos programas culturais, musicais, documentários e entrevistas produzidas pela TVE do Rio de Janeiro, de 1975 a 2007, e programas radiofônicos históricos e de valor artístico e cultural inestimável, da pioneira Rádio Sociedade, fundada por Roquette Pinto em 1923, às Rádios MEC AM e FM, além de programas de auditório da Rádio Nacional, radionovelas e jogos das Copas do Mundo desde 1950.
+    </div>
+
+    <!-- <div id="degustacaoAcervo">
+        
+          <object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="880" height="450">
+              <param name="movie" value="Acervo.swf" />
+              <param name="quality" value="high" />
+              <param name="wmode" value="opaque" />
+              <param name="swfversion" value="6.0.65.0" />
+              <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don’t want users to see the prompt.
+              <param name="expressinstall" value="Scripts/expressInstall.swf" />
+              <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC.
+              <!--[if !IE]>
+              <object type="application/x-shockwave-flash" data="Acervo.swf" width="880" height="450">
+                <!--<![endif]
+                <param name="quality" value="high" />
+                <param name="wmode" value="opaque" />
+                <param name="swfversion" value="6.0.65.0" />
+                <param name="expressinstall" value="Scripts/expressInstall.swf" />
+                <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. 
+                <div>
+                  <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
+                  <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" width="112" height="33" /></a></p>
+                </div>
+                <!--[if !IE]>
+              </object>
+              <!--<![endif]
+          </object>
+    </div> -->
+
+    <!--
+    <div class="caixas"
+         tal:define="caixas python:context.objectValues()">
+        <div class="caixa"
+             tal:repeat="caixa caixas">
+            <div class="textoCaixa">
+                <a tal:attributes="href caixa/absolute_url"><span class="tituloCaixa" tal:content="caixa/Title">Sobre EBC Marcas</span></a>
+                <img tal:attributes="src string:${caixa/absolute_url}/thumb-programa.jpg" />
+                <p tal:content="caixa/Description"></p>
+            </div>
+            <a tal:attributes="href caixa/absolute_url"><div class="botaoCaixas">Botão saiba mais"</div></a>
+        </div>
+    </div>
+    -->
+   
+</div>
+
+<script type="text/javascript">
+    	<!--
+    	swfobject.registerObject("FlashID");
+    	//-->
+    </script>
+
+
+
+</body>
+</html>

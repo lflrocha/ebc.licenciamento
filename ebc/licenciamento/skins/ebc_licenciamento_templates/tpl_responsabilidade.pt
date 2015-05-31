@@ -1,0 +1,66 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+
+
+<body>
+
+<div metal:fill-slot="main">
+
+    <div tal:define="id here/id">
+        <div class="tituloSecao" tal:content="here/Title" />
+        <div class="imgtituloSecao">Título da Seção</div>
+        <div class="textoSecao" tal:content="here/Description" />
+    </div>
+
+    <div class="caixas"
+         tal:define="caixas python:context.objectValues()">
+        <div class="caixa"
+             tal:repeat="caixa caixas">
+            <div class="textoCaixa">
+                <a tal:attributes="href caixa/absolute_url"><span class="tituloCaixa" tal:content="caixa/Title">Sobre EBC Marcas</span></a>
+                <img tal:attributes="src string:${caixa/absolute_url}/thumb-programa.jpg" />
+                <p tal:content="caixa/Description"></p>
+            </div>
+            <a tal:attributes="href caixa/absolute_url"><div class="botaoCaixas">Botão saiba mais"</div></a>
+        </div>
+    </div>
+   
+   <div id="conteudoeResponsabilidade">
+        <div id="textoResponsabilidadeUm"><p><strong></strong><br/><br/>
+O Catálogo de Licenciamento EBC reúne obras audiovisuais seriadas e não seriadas, de vários gêneros e formatos, desenvolvidas, produzidas ou coproduzidas pela EBC e empresas brasileiras e estrangeiras, além de um extenso acervo histórico audiovisual, sonoro e fotográfico. A partir de agora, todo esse portfólio de conteúdos inigualáveis está disponível para o mercado de exibição audiovisual nas mais diversas plataformas e janelas.
+
+<br><br>Empresas que buscam adquirir conteúdos qualificados, únicos, premiados e com excelentes atributos técnicos e artísticos podem entrar em contato com a área de Licenciamento e  verificar a disponibilidade para negociação e aquisição de direitos.
+<br><br>Será um prazer atendê-los.
+
+<br><br><br><br><strong>SITE DE LICENCIAMENTO. É a EBC valorizando e difundindo a diversidade cultural do Brasil.</strong></p>
+        </div>
+
+        <!-- 
+        <div id="textoResponsabilidadeDois"><p>Entretanto, deve-se investir em cultura, o que possibilita o crescimento pessoal e humano, a compreensão de valores fundamentais. 
+Logo, responsabilidade e cultura, juntas, estimulam e favorecem o comprometimento com a ideia de sustentabilidade.<br/><br/>
+        
+
+A EBC preza pelo desenvolvimento da capacidade de discernimento social, ambiental e política nas pessoas. 
+Em todos seus veículos, uma grade de programas voltada à cultura brasileira preenche a lacuna de atrações de boa qualidade deixada pelas emissoras comerciais. 
+Com o foco no desenvolvimento humano, o conteúdo veiculado preocupa-se tanto com a informação passada, quanto com quem irá recebê-la, e traz como base de sustentação de toda sua política a Responsabilidade Cultural.   </p>
+        </div>
+
+        <img src="responsabilidade_cultural.jpg" alt="Gráfico que mostra os três pilares da Responsabilidade Cultural da EBC: o aspecto social, cultural e ambiental,"/>
+        -->
+   </div>
+
+
+</div>
+
+
+
+
+
+</body>
+</html>

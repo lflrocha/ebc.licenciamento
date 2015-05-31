@@ -1,0 +1,80 @@
+/* <dtml-with base_properties> (do not remove this :) */
+/* <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either :) */
+
+#ebc-header {
+    font-family: sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 1;
+}
+
+#ebc-header .outter {
+    background: url("http://public.ebc.com.br/templates/html5//images/bgTopo.png") repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #282828;
+    height: 31px;
+}
+
+#ebc-header .inner {
+    margin: 0 auto;
+    max-width: 990px;
+    position: relative;
+}
+
+#ebc-header .inner .left {
+    float: left;
+}
+
+#ebc-header ul {
+    color: #fff;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+#ebc-header ul li {
+    border-left: 1px solid #4b4e39;
+    border-right: 1px solid #1c200c;
+    float: left;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+#ebc-header ul.sitesPrincipais li.first {
+    border-left: medium none;
+}
+
+#ebc-header .inner .right {
+    position: absolute;
+    right: 0;
+}
+
+#ebc-header ul li a {
+    color: #fff;
+    display: block;
+    padding: 10px 8px;
+    text-decoration: none;
+}
+
+#ebc-header ul.sitesPrincipais li.first a {
+    background-image: url("http://public.ebc.com.br/templates/html5/images/logoEBC.png");
+    background-position: 0 2px;
+    background-repeat: no-repeat;
+    padding-left: 37px;
+}
+
+
+#ebc-header ul.acessoInformacao li a {
+    background-image: url("http://public.ebc.com.br/templates/html5/images/acessoInformacao.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+    height: 21px;
+    line-height: 999px;
+    overflow: hidden;
+    padding: 5px;
+    width: 21px;
+}
+
+
+/* </dtml-with> */

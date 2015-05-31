@@ -1,0 +1,118 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+
+<metal:mystyleslot fill-slot="style_slot">
+<link href="http://vjs.zencdn.net/4.11/video-js.css" rel="stylesheet">
+<script src="http://vjs.zencdn.net/4.11/video.js"></script>
+<style type="text/css">
+  .vjs-default-skin { color: #ffffff; }
+  .vjs-default-skin .vjs-play-progress,
+  .vjs-default-skin .vjs-volume-level { background-color: #ffffff }
+</style>
+</metal:mystyleslot>
+
+
+
+<body>
+
+<div metal:fill-slot="main">
+
+    <div tal:define="id here/id;
+                     titulo here/Title;
+                     titulo_original here/getTitulo_original;
+                     banner here/getBanner;
+                     descricao here/getDescricao;
+                     pais here/getPais;
+                     direcao here/getDirecao;
+                     categoria here/getCategoria;
+                     formato here/getFormato;
+                     temporadas here/getTemporadas;
+                     episodios here/getEpisodios;
+                     duracao here/getDuracao;
+                     produtoras here/getProdutoras;
+                     video here/getVideo">
+
+        <div class="tituloSecao" tal:content="titulo" />
+        <div class="imgtituloSecao"></div>
+        <div class="imgPrograma"><img tal:attributes="src python:here.absolute_url()+'/banner'" /></div>
+
+        <div class="caixaDescricaoPrograma"> 
+
+
+          <div class="fichaTecnica">
+            <p tal:content="descricao" /> <br />
+            <tal:cond condition="titulo_original">
+              Título original: <span tal:content="titulo_original" /> <br />
+            </tal:cond>
+
+            <tal:cond condition="pais">
+            País: <span tal:content="pais" /> <br />
+            </tal:cond>
+
+            <tal:cond condition="direcao">
+            Direção: <span tal:content="direcao" /> <br />
+            </tal:cond>
+
+            <tal:cond condition="categoria">
+            Categoria: <span tal:content="categoria" /> <br />
+            </tal:cond>
+
+            <tal:cond condition="formato">
+            Formato: <span tal:content="formato" /> <br />
+            </tal:cond>
+
+            <tal:cond condition="temporadas">
+            Temporadas: <span tal:content="temporadas" /> <br />
+            </tal:cond>
+
+            <tal:cond condition="episodios">
+            Episódios: <span tal:content="episodios" /> <br />
+            </tal:cond>
+
+            <tal:cond condition="duracao">
+            Duração: <span tal:content="duracao" /> <br />
+            </tal:cond>
+
+          </div>
+
+
+
+
+
+
+          <div class="video" tal:condition="video">
+
+<video id="video1" class="video-js vjs-default-skin" controls preload="auto" width="320" height="240"  data-setup="{}">
+ <source src="video.mp4" type='video/mp4' tal:attributes="src python:video[0].getURL()" />
+ <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+</video>
+          </div>
+
+      <div class="visualClear"><!-- --></div>
+
+<div class="produtoras" tal:condition="produtoras">
+  Produção:
+  <div class="logos">
+    <img  tal:repeat="produtora produtoras"
+          tal:attributes="src produtora/getURL; 
+                         title produtora/Title" >
+  </div>
+</div>
+
+          <a tal:attributes="href string:${context/portal_url}/contact-info"><div class="botaoEstouInteressado">Botao Estou Interessado</div></a>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</body>
+</html>

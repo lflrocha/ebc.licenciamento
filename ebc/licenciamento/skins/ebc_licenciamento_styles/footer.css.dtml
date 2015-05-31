@@ -1,0 +1,79 @@
+/* <dtml-with base_properties> (do not remove this :) */
+/* <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either :) */
+
+.menu_footer {
+
+    background: none repeat scroll 0 0 #333333;
+    float: left;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1100px;
+}
+
+.menu_footer ul {
+    margin: 0 auto;
+    text-align: center;
+    width: 700px;
+}
+
+.menu_footer ul li {
+    display: inline;
+}
+
+.menu_footer ul li a {
+    color: #ffffff;
+    float: left;
+    font-size: 15px;
+    padding: 13px 29px;
+    text-decoration: none;
+    font-family: "Raleway",sans-serif;
+    font-weight: 400;
+    
+}
+
+address {
+    background: none repeat scroll 0 0 #ffffff;
+    float: left;
+    height: 150px;
+    padding-top: 20px;
+    width: 100%;
+    font-family: "Raleway",sans-serif;
+    
+}
+
+address p {
+    color: #666666;
+    font-size: 13px;
+    line-height: 18px;
+    font-family: "Raleway",sans-serif;
+    font-style: normal;    
+}
+
+address a {
+    color: #0000EE;
+    text-decoration: none;
+}
+
+
+.footer_logo {
+    margin-top: 20px;
+    width: 22.2222%;
+}
+
+.col {
+    border-left-width: 20px;
+    padding: 0;
+    background-clip: padding-box !important;
+    box-sizing: border-box;
+    float: left;
+}
+
+.footer_info {
+    width: 38.8889%;
+}
+
+/* </dtml-with> */
